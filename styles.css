@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: linear-gradient(
+    90deg,
+    rgba(159, 157, 193, 1) 0%,
+    rgba(84, 84, 223, 1) 43%,
+    rgba(0, 208, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .logo img {
+  width: 200px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4em;
+  z-index: 1;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+.container .register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .container .register button {
+  background: #0f62d6;
+  height: 40px;
+  width: 97px;
+  border-radius: 37%;
+} */
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-6 {
+  background: rgb(247, 150, 192);
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.btn-6:hover {
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 0.5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+  width: 100%;
+}
+.btn-6 span:hover:after {
+  width: 100%;
+}
+
+.road {
+  margin: 0%;
+}
+
+section {
+  width: 100%;
+  height: 80vh;
+  background: url(), #ddd;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  background: url(), #47a;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.btnf {
+  right: 25px;
+  bottom: 25px;
+  position: fixed;
+  z-index: 90;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 70px;
+  background: rgba(#000, 0.3);
+  background-color: #15385b;
+  position: fixed;
+  font-size: 1.45rem;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.izq {
+  margin: 10px;
+  padding: 10px;
+ 
+}
+
+
+
+ul li {
+  display: inline-block;
+  padding: 8px;
+
+  &:hover {
+    border-bottom: 1px solid rgba(#8a0808, 0.8);
+  }
+}
+.cycle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#cycleImg {
+  position: absolute;
+  width: 100px;
+  top: 0px;
+  left: 0%;
+}
+
+.der {
+  margin: 10px;
+  padding: 10px;
+}
+
+.der ul {
+  width: max-content;
+}
+.der a {
+  text-decoration: none;
+  color: khaki;
+}
+.der a:hover {
+  text-shadow: yellow;
+}
+
+.bannerp {
+  background: url(backimg.png);
+  background-color: #000;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 65%;
+  width: 65%;
+  
+}
+
+h2 {
+  color: #6c4d74;
+  background-color: rgb(193, 222, 250);
+  border-style: solid;
+  border-bottom: 1px solid rgba(#fff, 0.5);
+  padding: 15px;
+  text-align: center;
+  width: 150px;
+}
+#themename{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+   
+  
+}
+
+
+.parr {
+  background-color: rgb(220, 185, 211);
+   border-style: solid;
+  padding: 25px;
+  margin-top: 0;
+  color: #443c3c;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* time date info */
+
+.cont {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  height: 50vh;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.DTLcards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.DTLcard {
+  position: relative;
+  height: 15em;
+  perspective: 150em;
+  width: 15em;
+  height: 15vw;
+  margin-top: 0;
+  margin: 80px;
+}
+.card__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15em;
+  backface-visibility: hidden;
+  transition: all 0.6s ease;
+  box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+}
+.card__side--front {
+  background-color: #FFF;
+}
+.card__side--back {
+  color: #FFF;
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #2998FF, #5643FA);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #FFB900, #FF7730);
+}
+.DTLcard:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.DTLcard:hover .card__side--back {
+  transform: rotate(0);
+}
+.card__description {
+  text-transform: uppercase;
+  font-size: 5em;
+  padding: 1em 0;
+}
+.card__description svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #FFF;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.one, .three {
+  margin: 30px auto !important;
+}
+
+.scroll {
+  overflow-y: auto;
+  background-color: #0093E9;
+ 
+  background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+}
+.scroll  #category{
+  font-weight: 250;
+  font-size: 45px ;
+  color: rgb(89, 255, 0);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+.container.two .mapcard::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: #fff9d8;
+  position: absolute;
+  top: -30px;
+  border-radius: 35%;
+  left: -20px;
+}
+.container .grid-cards {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  max-width: 1024px;
+  margin: 1rem auto;
+}
+@media (max-width: 922px) and (min-width: 601px) {
+  .container .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container .grid-cards {
+    flex-direction: column;
+  }
+}
+.container .grid-cards .mapcard {
+  position: relative;
+  flex: 1;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding: 1rem 1rem 1.5rem;
+  box-shadow: 0 10px 25px rgba(215, 49, 49, 0.08);
+  border-radius: 1rem;
+  min-height: 170px;
+  margin: 15px;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  animation: fadeInLeft 1.5s backwards;
+}
+.container .grid-cards .mapcard:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.container .grid-cards .mapcard:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.container .grid-cards .mapcard:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.container .grid-cards .mapcard:hover {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+}
+.container .grid-cards .mapcard img {
+  aspect-ratio: 500/320;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  position: relative;
+  max-height: 320px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px -7px #aaa;
+}
+.container .grid-cards .mapcard .card-body {
+  color: #676767;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0 0.8rem;
+  position: relative;
+}
+.container .grid-cards .mapcard .card-body .icon {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0;
+}
+.container .grid-cards .mapcard .card-body .icon i {
+  position: relative;
+  font-size: 25px;
+  transition: 0.5s;
+  line-height: 0;
+  top: -7px;
+  left: -12px;
+  z-index: 2;
+}
+.container .grid-cards .mapcard .card-body .icon i::before {
+  background: #FFD854;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .grid-cards .mapcard .card-body .icon h3 {
+  margin: -9px 0 0 20px;
+}
+.container .grid-cards .mapcard .card-body .title-card {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.container .grid-cards .mapcard .card-body p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.container .grid-cards .mapcard .card-footer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1rem);
+}
+.container .grid-cards .mapcard .card-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFD854;
+  color: #fff;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  width: 56%;
+  height: 40px;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.container .grid-cards .mapcard .card-footer a:hover {
+  filter: brightness(0.98);
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+} 
+
+
